@@ -20,21 +20,25 @@ compile 'com.ak.mylibrary:file-logger:1.0'
 
 Implementation
 --------------
-In Application class
-`public class Appcontroller extends Application {
+
+```java
+//In Application class
+public class Appcontroller extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
         FileLogger.getInstance().attachApplication(this);
     }
-}`
-##In Activity or Fragment
-`FileLogger logger=FileLogger.getInstance();
+}
+
+//In Activity or Fragment
+FileLogger logger=FileLogger.getInstance();
         logger.startLoggerForTag(TAG);
          logger.appendLog(TAG, "Onstart");
          //Called on OnDestory method
         logger.flush(TAG);
-        `
+        
+```
 [Sample](https://github.com/ananthDev/FileLogger/tree/master/app/src/main/java/com/ak/filelogger)
 
 Later release
@@ -43,7 +47,7 @@ Later release
 2. Encryption and decryption log 
 
 ### Issues
-Please free to share your [issues](https://github.com/ananthDev/FileLogger/issues) and feedbacks(maakdeveloper@gmail.com) 
+Share the [issues](https://github.com/ananthDev/FileLogger/issues) and feedbacks(maakdeveloper@gmail.com) 
 
 License
 =======
