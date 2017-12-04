@@ -13,10 +13,6 @@ Via Maven
   <type>pom</type>
 </dependency>
 ```
-or Via Gradle
-```groovy
-compile 'com.ak.mylibrary:file-logger:1.0'
-```
 
 Implementation
 --------------
